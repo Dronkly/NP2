@@ -16,8 +16,18 @@ class Player {
     if (keys["s"]) this.y += this.v;
     if (keys["a"]) this.x -= this.v;
     if (keys["d"]) this.x += this.v;
+    if (keys [" "]) { 
+      this.w -= 2;
+      this.h -= 2;
+
+
+    }
   }
 }
+
+
+
+
 
 const myPlayer = new Player(10, 10, 50, 50, "red", 5);
 
