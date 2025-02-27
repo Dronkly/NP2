@@ -1,3 +1,6 @@
+
+
+
 class Player {
   constructor(x, y, w, h, c, v) {
     this.x = x;
@@ -22,6 +25,18 @@ class Player {
 
 
     }
+
+    if (keys["k"]) {
+ this.v += 1;
+
+    }
+
+   if (this.v > 0){
+    if (keys["l"]){
+this.v -= 1;
+
+    }
+  }
   }
 }
 
